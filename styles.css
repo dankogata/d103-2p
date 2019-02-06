@@ -1,0 +1,49 @@
+.grid{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 24vw);
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "main main . ."
+    "footer footer footer footer";
+
+}
+
+header{
+    align-items: center;
+    background-color: blue;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header h3{
+    color: lightgray;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+header nav a{
+    color: lightgray;
+    text-decoration: none;
+}
+main{
+    background-color: blueviolet;
+    grid-area: main;
+
+}
+.sidebar{
+    background-color: yellow;
+    grid-area: sidebar;
+
+}
+
+footer{
+    background-color: aqua;
+    grid-area: footer;
+
+}
